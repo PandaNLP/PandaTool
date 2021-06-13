@@ -13,4 +13,3 @@ class FileDownloadPipeline(FilesPipeline):
         path=urlparse(request.url).path
         temp=join(basename(dirname(path)),basename(path))
         return '%s/%s' % (basename(dirname(path)), basename(path))
-

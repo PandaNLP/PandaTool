@@ -11,8 +11,8 @@ import sys
 import re
 import os
 
-from urlparse import urlparse
-from urlparse import urlunparse
+from urllib.parse import urlparse
+from urllib.parse import urlunparse
 
 class fileSpider(Spider):
     name="file_download"

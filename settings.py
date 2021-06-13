@@ -68,9 +68,10 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, lik
 ITEM_PIPELINES = {
 #    'file_download.pipelines.SomePipeline': 300,
 #    'scrapy.pipelines.files.FilesPipeline':1,
-    'file_download.pipelines.FileDownloadPipeline':1,
+     'scrapy.pipelines.files.FilesPipeline':1,
 }
 FILES_STORE=r'download'
+IMAGES_STORE=r'images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
