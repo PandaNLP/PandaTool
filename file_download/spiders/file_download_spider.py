@@ -14,9 +14,13 @@ import os
 from urllib.parse import urlparse
 from urllib.parse import urlunparse
 
+
+# https://www.cnblogs.com/zhanghongfeng/p/7881810.html
+
+
 class fileSpider(Spider):
     name="file_download"
-    allowed_domains=['matplotlib.org']
+    #allowed_domains=['matplotlib.org']
     start_urls=['http://matplotlib.org/examples/index.html']
     def parse(self,response):
         le=LinkExtractor(restrict_xpaths='//*[@id="matplotlib-examples"]/div',deny='/index.html$')

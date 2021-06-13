@@ -13,3 +13,4 @@ class FileDownloadItem(scrapy.Item):
     # name = scrapy.Field()
     file_urls=scrapy.Field()
     files=scrapy.Field()
+    print(files)
